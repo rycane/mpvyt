@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+# Check if a video file was provided
+if [ $# -eq 0 ]; then
+    echo "Usage: $0 <video-file>"
+    exit 1
+fi
+
+video="$1"
+
+echo "Playing: $video"
+
+# Play the video with specified settings
+mpv "$video" --hwdec auto --sub-scale=0.6
