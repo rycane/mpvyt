@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+yt_link=$1
+
+echo 'Fetching video formats...'
+# Getting available video/stream formats
+yt-dlp -F "$yt_link"
+
+# Ask user to enter the target format
+echo 'Please enter the desired format (e.g., 22 for 720p):'
+read -r format
+
+# Ask user if they want audio only
+echo 'Do you want to play audio only? (y/n):'
+read -r audio_only
+
+# Determine the format option based on user input
+if [[ "$audio_only" == "y" ]]; then
+    mpv "$yt_link" --ytdl-format="bestaudio"
+else
+    mpv "$yt_link" --ytdl-format="$format"
+fi
+
