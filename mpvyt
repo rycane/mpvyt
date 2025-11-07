@@ -18,6 +18,6 @@ read -r audio_only
 if [[ "$audio_only" == "y" ]]; then
     mpv "$yt_link" --ytdl-format="bestaudio"
 else
-    mpv "$yt_link" --ytdl-format="$format"
+    mpv "$yt_link" --ytdl-format="$format" --hwdec=auto
 fi
 
