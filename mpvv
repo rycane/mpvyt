@@ -10,5 +10,8 @@ video="$1"
 
 echo "Playing: $video"
 
+# Getting Media info
+mediainfo $video
+
 # Play the video with specified settings
 mpv "$video" --hwdec auto --sub-scale=0.6
