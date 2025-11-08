@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+music_folder="$HOME/Music"
+
+# Ask if the user wants to shuffle
+echo 'Do you want to shuffle the playing? (y/n):'
+read -r shuffle
+
+# Determine the playlist command based on shuffle preference
+if [[ "$shuffle" == "y" || "$shuffle" == "Y" ]]; then
+    mpv "$music_folder" --no-video --hwdec=auto --shuffle
+else
+    mpv "$music_folder" --no-video --hwdec=auto
+fi
