@@ -10,16 +10,5 @@ video="$1"
 
 echo "Playing: $video"
 
-# Getting Media info
-if ! mediainfo "$video"; then
-    echo "Failed to retrieve media info."
-    exit 1
-fi
-
 # Play the video with specified settings
-if ! mpv "$video" --hwdec auto --sub-scale=0.6 &; then
-    echo "Failed to play video."
-    exit 1
-fi
-
-wait
+mpv "$video" --hwdec auto --sub-scale=0.6
