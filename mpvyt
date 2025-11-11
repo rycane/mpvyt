@@ -16,10 +16,10 @@ read -r audio_only
 
 # Determine the format option based on user input
 if [[ "$audio_only" == "y" ]]; then
-    mpv "$yt_link" --ytdl-format="bestaudio"
+    mpv "$yt_link" --ytdl-format="bestaudio" --term-osd-bar
     # flatpak run io.mpv.Mpv "$yt_link" --ytdl-format="bestaudio" --term-osd-bar
 else
-    mpv "$yt_link" --ytdl-format="$format" --hwdec=auto
+    mpv "$yt_link" --ytdl-format="$format" --hwdec=auto --term-osd-bar
     # flatpak run io.mpv.Mpv "$yt_link" --ytdl-format="$format" --hwdec=auto --term-osd-bar
 fi
 
