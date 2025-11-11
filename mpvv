@@ -12,3 +12,7 @@ echo "Playing: $video"
 
 # Play the video with specified settings
 mpv "$video" --hwdec auto --sub-scale=0.6
+
+# flatpak command (if using flatpak version instead)
+# flatpak run io.mpv.Mpv "$video" --hwdec auto --sub-scale=0.6 
+
