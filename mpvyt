@@ -2,6 +2,17 @@
 
 yt_link=$1
 
+echo '
+
+
+▗▖  ▗▖▗▄▄▖ ▗▖  ▗▖▗▖  ▗▖▗▄▄▄▖
+▐▛▚▞▜▌▐▌ ▐▌▐▌  ▐▌ ▝▚▞▘   █
+▐▌  ▐▌▐▛▀▘ ▐▌  ▐▌  ▐▌    █
+▐▌  ▐▌▐▌    ▝▚▞▘   ▐▌    █ by rycane
+
+
+'
+
 echo 'Fetching video formats...'
 # Getting available video/stream formats
 yt-dlp -F "$yt_link"
@@ -22,4 +33,7 @@ else
     mpv "$yt_link" --ytdl-format="$format" --hwdec=auto --term-osd-bar
     # flatpak run io.mpv.Mpv "$yt_link" --ytdl-format="$format" --hwdec=auto --term-osd-bar
 fi
+
+
+
 
