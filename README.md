@@ -27,7 +27,7 @@ Before using `mpvyt`, ensure you have the following installed:
 
 1. **Clone the repository**:
    ```bash
-   git clone "https://github.com/rycane/mpvyt"
+   git clone "https://github.com/rycane/mpvyt.git"
    ```
 2. **Modify the Script for Flatpak (if applicable):**
    - If you are using Flatpak for mpv, you need to uncomment the Flatpak commands in the mpvyt script and comment out the mpv commands.
