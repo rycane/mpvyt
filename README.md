@@ -54,6 +54,7 @@ Before using `mpvyt`, ensure you have the following installed:
 5. **Grant Execute Permission:**
    
    - Navigate to the script folder and run:
+     
     ```bash
     chmod +x mpvyt
     ```
@@ -61,6 +62,7 @@ Before using `mpvyt`, ensure you have the following installed:
 7. **Add mpvyt to Local /bin:**
    
    - You can either move the mpvyt file to the .local/bin folder graphically or via the command line:
+     
     ```bash
     mv mpvyt ~/.local/bin
     ```
