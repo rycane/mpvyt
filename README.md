@@ -53,7 +53,7 @@ Before using `mpvyt`, ensure you have the following installed:
     ```
 ## Usage
 
-# To use the script, simply run:
+To use the script, simply run:
 
     ```bash
     mpvyt <YouTube or stream link here>    ```
