@@ -11,7 +11,7 @@
 Before using `mpvyt`, ensure you have the following installed:
 
 - **yt-dlp** (to fetch available formats)
-- 
+  
   - For example, on openSUSE, you can install it using:
     
     ```bash
