@@ -46,7 +46,7 @@ Before using `mpvyt`, ensure you have the following installed:
     ```bash
     chmod +x mpvyt
     ```
-4. **Add mpvyt to Local /bin:***
+4. **Add mpvyt to Local /bin:**
   - You can either move the mpvyt file to the .local/bin folder graphically or via the command line:
     ```bash
     mv mpvyt ~/.local/bin
